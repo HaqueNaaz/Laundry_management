@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package landryshopmanagementsystem;
+
+import com.mysql.jdbc.Connection;
+
+/**
+ *
+ * @author User
+ */
+public class database {
+    
+    public static Connection connectionDB(){
+        
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            
+            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost/laundry","root","");
+            return connect;
+            
+        }catch(Exception e) {e.printStackTrace();}
+        return null;
+        
+        }
+        
+    }
+    
+    
+    
+
