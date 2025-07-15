@@ -1,0 +1,35 @@
+.left-form{
+    -fx-background-color: linear-gradient(to bottom right, #4694bb, #2a517b);
+}
+
+.white-form{
+    -fx-background-color: #fff;
+}
+
+.header-label{
+    -fx-border-color: #4694bb;
+    -fx-border-width: 0 0 0 2.5px;
+    -fx-padding: 0 0 0 5px;
+}
+
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: #ddd;
+    -fx-border-width: .7px;
+    -fx-border-radius: 2px;
+}
+
+.textfield:focused{
+    -fx-border-color: linear-gradient(to bottom right, #4694bb, #2a517b);
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+    -fx-font-size: 13px;
+}
+
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom, #4694bb, #2a517b);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
