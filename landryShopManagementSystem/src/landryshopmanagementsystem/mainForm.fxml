@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="14.0" layoutY="52.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="254.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="600.0" prefWidth="254.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="-1.0" prefHeight="101.0" prefWidth="254.0" AnchorPane.bottomAnchor="499.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="55.0" layoutY="38.0" text="Laundry Shop">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="23.0" layoutY="114.0" text="Welcome,">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="136.0" layoutY="114.0" prefHeight="22.0" prefWidth="96.0" text="MarcoMan">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="26.0" layoutY="198.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Dashboard">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="DASHBOARD" size="1.7em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="26.0" layoutY="252.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Order">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="SHOPPING_CART" size="1.7em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="26.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Services">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="CLIPBOARD" size="1.7em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="26.0" layoutY="363.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="Customer">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="USERS" size="1.7em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="14.0" layoutY="555.0" mnemonicParsing="false">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="SIGN_OUT" size="2em" />
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="69.0" layoutY="557.0" text="Logout">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
