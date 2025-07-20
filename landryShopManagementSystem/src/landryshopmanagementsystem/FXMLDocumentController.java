@@ -6,12 +6,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class FXMLDocumentController implements Initializable {
 
@@ -45,7 +49,6 @@ public class FXMLDocumentController implements Initializable {
             String sql = "SELECT * FROM employee WHERE username = ? AND password = ?";
             connect = (Connection) database.connectDb();
 
-
             try {
                 prepare = connect.prepareStatement(sql);
                 prepare.setString(1, username.getText());
@@ -60,7 +63,19 @@ public class FXMLDocumentController implements Initializable {
                     alert.setContentText("Successfully Logged In!");
                     alert.showAndWait();
 
-                    // You can add dashboard load code here
+                    Parent root = FXMLLoader.load(getClass().getResource("mainForm.fxml"));
+                    Stage stage = new Stage();
+                    Scene scene = new Scene(root);
+
+                    stage.setMinWidth(1100);
+                    stage.setMinHeight(600);
+
+                    stage.setTitle("Laundry Shop Management System");
+
+                    stage.setScene(scene);
+                    stage.show();
+                    
+                    login_btn.getScene().getWindow().hide();
 
                 } else {
                     alert = new Alert(Alert.AlertType.ERROR);
